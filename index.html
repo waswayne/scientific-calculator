@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="A powerful JavaScript scientific calculator with keyboard support, exponents, trigonometry, and logarithms. Use it online for fast and accurate calculations!"
+    />
+    <meta
+      name="keywords"
+      content="scientific calculator, online calculator, JavaScript calculator, math, trigonometry, exponent, log calculator"
+    />
+    <meta name="author" content="Your Name" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Scientific Calculator - Online Math Tool"
+    />
+    <meta
+      property="og:description"
+      content="Use this free web-based scientific calculator with keyboard support, exponents, and advanced math functions."
+    />
+    <meta
+      property="og:image"
+      content="https://scicalcpro.netlify.app/your-preview-image.png"
+    />
+    <meta property="og:url" content="https://scicalcpro.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    
+
     <title>Scientific Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="calculator">
-        <input type="text" id="display" readonly>
-        <div class="buttons">
-            <!-- Row 1: Scientific Functions -->
-            <button class="sci">sin</button>
-            <button class="sci">cos</button>
-            <button class="sci">tan</button>
-            <button class="sci">^</button>
-            <button class="sci mode">rad</button>
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <!-- Row 1: Scientific Functions -->
+        <button class="sci">sin</button>
+        <button class="sci">cos</button>
+        <button class="sci">tan</button>
+        <button class="sci">^</button>
+        <button class="sci mode">rad</button>
 
-            <!-- Row 2: Math Constants/Functions -->
-            <button class="sci">log</button>
-            <button class="sci">ln</button>
-            <button class="sci">&pi;</button>
-            <button class="sci">e</button>
-            <button class="sci">&#8730;</button>
+        <!-- Row 2: Math Constants/Functions -->
+        <button class="sci">log</button>
+        <button class="sci">ln</button>
+        <button class="sci">&pi;</button>
+        <button class="sci">e</button>
+        <button class="sci">&#8730;</button>
 
-            <!-- Row 3: Parentheses & Operators -->
-            <button class="paren">(</button>
-            <button class="paren">)</button>
-            <button class="operator">÷</button>
-            <button class="operator">x</button>
-            <button class="backspace">⌫</button>
+        <!-- Row 3: Parentheses & Operators -->
+        <button class="paren">(</button>
+        <button class="paren">)</button>
+        <button class="operator">÷</button>
+        <button class="operator">x</button>
+        <button class="backspace">⌫</button>
 
-            <!-- Row 4: Numbers -->
-            <button class="num">7</button>
-            <button class="num">8</button>
-            <button class="num">9</button>
-            <button class="operator">-</button>
-            <button class="clear">C</button>
+        <!-- Row 4: Numbers -->
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+        <button class="operator">-</button>
+        <button class="clear">C</button>
 
-            <!-- Row 5: Numbers -->
-            <button class="num">4</button>
-            <button class="num">5</button>
-            <button class="num">6</button>
-            <button class="operator">+</button>
-            <button class="hidden"></button>
+        <!-- Row 5: Numbers -->
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
+        <button class="operator">+</button>
+        <button class="hidden"></button>
 
-            <!-- Row 6: Numbers -->
-            <button class="num">1</button>
-            <button class="num">2</button>
-            <button class="num">3</button>
-            <button class="equals">=</button>
-            <button class="hidden"></button>
+        <!-- Row 6: Numbers -->
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
+        <button class="equals">=</button>
+        <button class="hidden"></button>
 
-            <!-- Row 7: Bottom Row -->
-            <button class="num zero">0</button>
-            <button class="decimal">.</button>
-            <button class="equals span-3">=</button>
-        </div>
+        <!-- Row 7: Bottom Row -->
+        <button class="num zero">0</button>
+        <button class="decimal">.</button>
+        <button class="equals span-3">=</button>
+      </div>
     </div>
-    <script src="script.js"></script>
-</body>
+    <!-- <script src="script.js"></script> -->
+
+    <script src="script.min.js"></script>
+  </body>
 </html>
